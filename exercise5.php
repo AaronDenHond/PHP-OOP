@@ -37,7 +37,7 @@ class Beverage
         return $this->color;
     }
 
-    public function getTotalServed() {
+    public static function getTotalServed() {
         return self::$timesServed;
     }
 }
@@ -106,4 +106,4 @@ echo "<br>";
 $cara = new Beverage("piskleur", 0.1);
 $jupke = new Beverage("yellow",2.5);
 $maes = new Beverage("Brown", 3);
-echo $cara->getTotalServed();
+echo Beverage::getTotalServed();
